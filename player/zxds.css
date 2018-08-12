@@ -1,0 +1,133 @@
+.xing_vb {margin: 0 auto;width:100%;border:0px solid #DDD;margin-bottom:5px;}
+.xing_vb li { white-space: nowrap;list-style-type:none;width:80%;line-height:10vh;height:10vh;background:#cfe7fa;border:0vw solid #cfe7fa;text-align: left;margin: 0 auto;margin-top: 6px;padding:0 0;font-size: 2.5vw;}
+.xing_vb li span.xing_vb1{float:left;width:20%;background: #e9e9e9;}
+.xing_vb li span.xing_vb2{float:left;width:20%;background: #e9e9e9;}
+.xing_vb li span.xing_vb3{width:20%;float: right;background:#e9e9e9;}
+.xing_vb li span.tt{}
+.xing_vb li span.xing_vb4{padding-left: 1.5vw;float:left;width:100%;text-align:left;border-bottom:0px dashed #CCC;}
+.xing_vb li span.xing_vb5{float:left;width:20%;border-bottom:0px dashed #CCC;display:none;}
+.xing_vb li span.xing_vb6{width:20%;float:right;border-bottom:0px dashed #CCC;display:none;}
+.xing_vb li span.xing_vb7{width:20%;float:right;border-bottom:0px dashed #CCC;color:#ff0000;}
+
+#loading {
+    width:170px;
+    height:25px;
+    border:3px solid #C3DAF9;
+    position:absolute;
+    top:300px;
+    left:600px;
+    z-index:10000;
+    background-color:#F7F9FC;
+    line-height:25px;
+    vertical-align:middle;
+    font-size:11pt;
+
+}
+
+strong{
+    display: none;
+}
+
+body {
+    color: #444444;
+    background-color: #EEEEEE;
+    font-family: 'Microsoft YaHei';
+    font-size: 100%;
+    height: auto;
+    width: auto;
+}
+.container{
+    display:none;
+}
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+a:active {
+    text-decoration: none;
+    color: #000000;
+}
+#page{
+    background-color: #FFFFFF;
+    width: 90%;
+    margin: 24px auto;
+    padding: 12px;
+    max-width: 800px;
+}
+#header_top
+ {
+     padding: 6px ;
+     text-align: center;
+     height: auto;
+     width: auto;
+ }
+#header
+{
+    padding: 6px ;
+    text-align: center;
+    height: auto;
+    width: auto;
+}
+.status3xx { background-color: #D5AC80; color: #FFFFFF; }
+.status4xx { background-color: #475076; color: #FFFFFF; }
+.status5xx { background-color: #F2E81A; color: #000000; }
+
+.downdiv { background-color: #EEEEEE; color: #475076;  text-align: center;  padding: 1px ;}
+
+#content {
+    padding: 4px 0 24px 0;
+    text-align: center;
+}
+#footer {
+    color: #666666;
+    background: #f9f9f9;
+    padding: 10px 10px;
+    border-top: 5px #efefef solid;
+    font-size: 0.7em;
+    text-align: center;
+}
+#footer a {
+    color: #999999;
+}
+@media screen and (min-width:1px)
+{
+    #tb1 {
+        width:100%;
+        display:inline;
+        text-align:center;
+    }
+}
+@media screen and (min-width:300px)
+{
+    #tb1 {
+        width:48%;
+        display:inline;
+        text-align:center;
+    }
+}
+@media screen and (min-width:600px)
+{
+    #tb1 {
+        width:23%;
+        display:inline;
+        text-align:center;
+        padding:4px;
+    }
+}
+@media screen and (min-width:900px)
+{
+    #tb1 {
+        width:11.8%;
+        display:inline;
+        text-align:center;
+        padding:10px;
+    }
+}

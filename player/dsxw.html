@@ -1,0 +1,27 @@
+<script type="text/javascript" src="./ckplayer/ckp_m3u.js" charset="utf-8"></script>
+<div id="myElement" style="width:100%;height:100%;"></div>
+<script type="text/javascript">
+    var u = "http://220.228.49.31/live/fet003/chunklist.m3u",
+            isMobile = /android|phone|mobi|ipad|ipod|blackberry|symbian|midp|ios/i.test(navigator.userAgent.toLowerCase()),
+            z = 0;
+    if (isMobile) {
+        document.getElementById('myElement').innerHTML = '<' + 'video autoplay="autoplay" src="' + u + '" controls="controls" width="100%" height="100%" preload="auto"' + '></' + 'video>'
+    } else {
+        var flashvars = {
+            f: 'http://www.chalea.com/Chaleaplayer/ck/CkYSJLoGoplayer/m3u8.swf',
+            a: encodeURIComponent(u),
+            lv: 1,
+            c: 0,
+            s: 4,
+            v:100,
+            p: 1
+        };
+        var params = {
+            bgcolor: '#FFF',
+            allowFullScreen: true,
+            allowScriptAccess: 'always',
+            wmode: 'transparent'
+        };
+        CKobject.embedSWF('http://www.chalea.com/Chaleaplayer/ck/CkYSJLoGoplayer/ckplayer.swf', 'myElement', 'ckplayer_a1', '100%', '100%', flashvars, params)
+    }
+</script>

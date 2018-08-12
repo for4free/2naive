@@ -1,0 +1,114 @@
+body,ul,li,h2,h3,div{margin:0;padding:0;border:0;}
+body{font-size:12px; font-family:"Microsoft YaHei";}
+ul{list-style-type:none;}
+a{text-decoration:none;}
+
+body{background:url(../images/daohang_bg.png) left top repeat;}
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+}
+.list{
+	text-align: center;
+	width:100%;
+	height:auto;
+	margin-top:10px;
+}
+.list li{
+	display:inline-block;
+	margin:5px;
+	height:100px;
+	background:#FFF;
+	box-shadow:2px 2px 4px rgba(0, 0, 0, 0.2);
+	-webkit-transition:0.3s all ease;
+	-moz-transition:0.3s all ease;
+	-ms-transition:0.3s all ease;
+	-o-transition:0.3s all ease;
+	transition:0.3s all ease;
+	overflow:hidden;
+	position:relative;
+}
+
+.list li:hover{
+	background:#000;
+	box-shadow:2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.text h2,.text a{
+	font-family:"Microsoft YaHei";
+	color:#333;
+	text-shadow:1px 2px 4px #999;
+	font-size:30px;
+	font-weight:normal;
+	-webkit-transition:0.3s all ease;
+	-moz-transition:0.3s all ease;
+	-ms-transition:0.3s all ease;
+	-o-transition:0.3s all ease;
+}
+.text h3{
+	font-family:Verdana;
+	font-size:14px;
+	color:#666;
+	font-weight:normal;
+	-webkit-transition:0.3s all ease;
+	-moz-transition:0.3s all ease;
+	-ms-transition:0.3s all ease;
+	-o-transition:0.3s all ease;
+}
+.list li:hover h2,.list li:hover  a{
+	color:#FFF;
+	font-size:18px;
+	text-shadow:1px 2px 4px #333;
+}
+.list li:hover .text h3{
+	color:#F60;
+	font-size:18px;
+	margin-top:10px;
+}
+.list li .icon{
+	width:60px;
+	height:90px;
+	margin-left:20px;
+	margin-top:5px;
+	margin-right:20px;
+	float:left;
+	font-size:30px;
+	line-height:90px;
+	text-align:center;
+	-webkit-transition:0.3s all ease;
+	-moz-transition:0.3s all ease;
+	-ms-transition:0.3s all ease;
+	-o-transition:0.3s all ease;
+	text-shadow:0 0 3px #CCCCCC;
+}
+.list li:hover .icon{
+	color:#F90;
+	font-size:50px;
+}
+.list li:hover .text{
+	-webkit-animation-name:shake;
+	-moz-animation-name:shake;
+}
+.text{
+	float:left;
+	margin-top:24px;
+	height:70px;
+	-webkit-animation:.5s .2s ease both;
+-moz-animation:1s .2s ease both;
+}
+
+@-webkit-keyframes shake{
+0%,100%{-webkit-transform:translateX(0);}
+20%,60%{-webkit-transform:translateX(-10px);}
+40%,80%{-webkit-transform:translateX(10px);}
+}
+@-moz-keyframes shake{
+0%,100%{-moz-transform:translateX(0);}
+20%,60%{-moz-transform:translateX(-10px);}
+40%,80%{-moz-transform:translateX(10px);}
+}
+
+.footer {
+	font-size: 16px;
+	width: 280px;
+	margin: 30px auto;
+}
