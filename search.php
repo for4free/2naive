@@ -22,35 +22,7 @@
     if(isMobile()){
         echo '<script src="tb/style/clipboard.min.js"></script>';
     }
-    //统计搜索信息
-    function tj($WD_ys){
-        require './conn.php';
-        function getAd($ip=""){
-            $res = @file_get_contents('http://ip.taobao.com/service/getIpInfo.php?ip=' . $ip);
-            $jsonMatches = array();
-            preg_match('#\{.+?(\{.+?\})\}#', $res, $jsonMatches);
-            $json = json_decode($jsonMatches[1], true);
-            return $json;
-        }
-        $user_IP = ($_SERVER["HTTP_VIA"]) ? $_SERVER["HTTP_X_FORWARDED_FOR"] : $_SERVER["REMOTE_ADDR"];
-        $user_IP = ($user_IP) ? $user_IP : $_SERVER["REMOTE_ADDR"];
-        $ip_ad = getAd($user_IP);
-        reset($ip_ad);
-        foreach ($ip_ad as $key=>$value)
-        {
-            if($key == "country"){
-                $value1 = $value;
-            }elseif($key == "region") {
-                $value2 = $value;
-            }elseif($key == "city") {
-                $value3 = $value;
-            }
-        }
-        $ip_ad_t = $value1." ".$value2." ".$value3;
-        $time = date('H');
-        mysql_query("INSERT INTO search (content,ip,ip_ad,date,date_time) VALUES ('$WD_ys','$user_IP','$ip_ad_t',NOW(),'$time')");
-        mysql_close();
-    }
+ 
     if ($WD=="请在上方输入视频名称") {
         header("Location: ./index_e.html");
         exit;
@@ -341,8 +313,7 @@ flush();
     }
     flush();
     /*fclose($file);*/
-    //暂时关闭ip统计
-    tj($WD_ys);
+
 
     ?>
 </div>
